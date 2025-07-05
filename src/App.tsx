@@ -35,7 +35,10 @@ function App() {
 
 	return (
 		<>
-			<Box display='flex' flexDirection='column' gap={2} width={400} ml='auto' mr='auto' mt={12}>
+			<Box display='flex' flexDirection='column' gap={2} width={{ sm: '85%', md: 420 }} ml='auto' mr='auto' mt={12}>
+				<Typography variant='h3' textAlign='center'>
+					Travel Split
+				</Typography>
 				<TextField
 					label='Distance (km)'
 					value={trip.distance}
